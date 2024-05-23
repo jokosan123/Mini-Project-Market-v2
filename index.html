@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    
+</head>
+<style>
+    body{
+        font-size: 1.2em ;
+        
+    }
+    select option{
+        font-size: 1.2em;
+    }
+    select{
+        height: 30px;
+    }
+    label {
+        display: inline-block;
+        width: 170px;
+        padding-right: 10px;
+    }
+
+    table, th, td , tr{
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 10px 10px;
+        text-align: center;
+    }
+    input[type=button]{
+        width: 350px;
+        height: 30px;
+    }
+
+
+</style>
+<body>
+    <h1 style="text-align: center;">MARKET V2.0</h1>
+    <form action="">    
+        <p><label for="name">Nama <input type="text" id="name" value="name"></label></p>
+        <p><label for="price">Harga <input type="number" id="price" value="price"></label></p>
+        <p><label for="">Condition </label>
+        <input type="radio" name="Condition" id="new" value="new"> <label for="new">new</label>
+        <input type="radio" name="Condition" id="second" value="second"> <label for="second">second</label>    
+        </p>
+        <br> <br>
+        <p>
+        <label >Warehouse</label>
+        <select name="" id="warehouse">
+            <option value="JKT">Jakarta</option>
+            <option value="BDG">Bandung</option>
+            <option value="DIY">Jogja</option>
+        </select>
+        </p>
+        <p>
+            <label for="courier">courier</label>
+            <input type="checkbox" name="courier" value="JNE">JNE <label for="JNE"></label>
+            <input type="checkbox" name="courier" value="J&T">J&T <label for="J&T"></label>
+            <input type="checkbox" name="courier" value="NINJA EXPRESS"> NINJA EXPRESS <label for="NINJA"></label>
+        </p>
+        <input type="button" value="Create" onclick="creatInfo()">  
+        <button>Reset</button>
+
+        <p id="result">Waiting for result ...</p>
+
+    </form>
+    <br>
+
+    <form action="">
+        <label for="data"><input type="text" name="" id="data"></label>
+        <label for=""><input type="number" name="" id=""></label>
+        <label for=""><select name="" id=""></select></label>
+        <label for=""><input type="text" name="" id=""></label>
+    </form>
+    <br><br>
+    <table>
+        <tr>
+            <th>M</th>
+            <th>Company</th>
+            <th>Nama</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+        <tr>
+            <td>176272626</td>
+            <td>Fast Food</td>
+            <td>Noodle</td>
+            <td>3500</td>
+            <td>9</td>
+
+        </tr>
+        <tr>
+            <td>176272626</td>
+            <td>Electronik</td>
+            <td>Handphone</td>
+            <td>4300000</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>176272626</td>
+            <td>Cloth</td>
+            <td>Hoodie</td>
+            <td>300000</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>176272626</td>
+            <td>Fruit</td>
+            <td>Apple</td>
+            <td>10000</td>
+            <td>8</td>
+        </tr>
+
+
+    </table>
+  
+    
+    
+    <script src="index.js" ></script>
+</body>
+</html>
